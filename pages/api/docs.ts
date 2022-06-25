@@ -5,7 +5,7 @@ const swaggerHandler = withSwagger({
   definition: {
     openapi: "3.0.0",
     info: {
-      title: "NextJS Swagger",
+      title: "PodCodar API Docs",
       version: "0.1.0",
     },
   },
