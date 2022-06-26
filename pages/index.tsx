@@ -25,7 +25,7 @@ const Home: NextPage = () => {
           >
             <h3 className="text-2xl font-bold">🔎 Docs &rarr;</h3>
             <p className="mt-4 text-xl">
-              Encontro informações detalhadas sobre as APIs abertas da PodCodar
+              Encontre informações detalhadas sobre as APIs abertas da PodCodar
             </p>
           </a>
 
