@@ -1,23 +1,33 @@
-# Next.js + Tailwind CSS Example
+# PodCodar Labs
 
-This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v3.0)](https://tailwindcss.com/blog/tailwindcss-v3) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
+Projeto da [PodCodarLabs](https://labs.podcodar.com), nossa página de experimentos e ferramentas internas.
 
-## Deploy your own
+## Deploy
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example) or preview live with [StackBlitz](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-tailwindcss)
+Primeiramente, crie um arquivo `.env.local` como exemplificado em [`.env.example`](https://github.com/podcodar/labs/blob/main/.env.example).
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss&project-name=with-tailwindcss&repository-name=with-tailwindcss)
+> **Note**
+> Solicite a um membro do time a string de conexão oficial para testes
 
-## How to use
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/podcodar/labs/&project-name=PodCodarLabs&repository-name=labs)
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init), [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/), or [pnpm](https://pnpm.io) to bootstrap the example:
+## Como usar?
+
 
 ```bash
-npx create-next-app --example with-tailwindcss with-tailwindcss-app
-# or
-yarn create next-app --example with-tailwindcss with-tailwindcss-app
-# or
-pnpm create next-app --example with-tailwindcss with-tailwindcss-app
-```
+# run dev server
+yarn dev
 
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+# run build prod server
+yarn build
+
+# database (alias to prisma)
+yarn db
+
+# database sync (migrate & generate)
+yarn db:sync
+# database migrate
+yarn db:migrate
+# database generate
+yarn db:migrate
+```
