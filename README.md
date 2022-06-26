@@ -4,14 +4,20 @@ Projeto da [PodCodarLabs](https://labs.podcodar.com), nossa página de experimen
 
 ## Deploy
 
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/podcodar/labs/&project-name=PodCodarLabs&repository-name=labs)
+
+
+> **Note**
+>
+> Defina uma variável de ambiente `DATABASE_URL`.
+
+## Como usar?
+
 Primeiramente, crie um arquivo `.env.local` como exemplificado em [`.env.example`](https://github.com/podcodar/labs/blob/main/.env.example).
 
 > **Note**
+>
 > Solicite a um membro do time a string de conexão oficial para testes
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/podcodar/labs/&project-name=PodCodarLabs&repository-name=labs)
-
-## Como usar?
 
 
 ```bash
