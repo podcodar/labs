@@ -5,7 +5,10 @@
     "build": "next build",
     "start": "next start",
     "studio": "dotenv -e .env.local -- prisma studio",
-    "migrate:dev": "prisma migrate dev; prisma generate"
+    "db": "dotenv -e .env.local -- prisma",
+    "db:sync": "yarn db:migrate && yarn db:generate",
+    "db:migrate": "yarn db migrate dev",
+    "db:generate": "yarn db generate"
   },
   "engines": {
     "npm": "please-use-yarn",
