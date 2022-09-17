@@ -28,6 +28,6 @@ type Link = {
 };
 
 const projectLinks: Link[] = [
-  { name: "Colinha", href: "/colinha" },
-  { name: "Counter", href: "/counter" },
+  { name: "Colinha", href: "/projects/colinha" },
+  { name: "Counter", href: "/projects/counter" },
 ];
