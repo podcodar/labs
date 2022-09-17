@@ -2,8 +2,9 @@ import { site } from "#/settings.ts";
 
 const logo = (
   <img
+    width={40}
+    height={40}
     src="/logo.svg"
-    height="100px"
     alt="the fresh logo: a sliced lemon dripping with juice"
   />
 );
@@ -17,6 +18,8 @@ const logoWithText = (
 
 const githubIcon = (
   <svg
+    width={40}
+    height={40}
     viewBox="0 0 1024 1024"
     fill="currentColor"
     style="width: 1.2rem; height: 1.2rem;"
