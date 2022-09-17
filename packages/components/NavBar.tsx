@@ -1,7 +1,7 @@
 import { site } from "#/settings.ts";
 
 export const NavBar = () => (
-  <div class={"flex items-center gap-4 px-4 py-12 mx-auto max-w-screen-md"}>
+  <div class="flex items-center gap-4 px-4 py-12 mx-auto max-w-screen-md">
     <a href="/">
       <Logo />
     </a>
