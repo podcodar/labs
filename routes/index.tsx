@@ -11,7 +11,7 @@ export default function Home() {
       {links.map((link) => (
         <a
           href={link.href}
-          target={link.target}
+          target="_blank"
           class="w-96 rounded-xl border p-6 text-left hover:text-blue-600 focus:text-blue-600"
         >
           <h3 class="text-2xl font-bold">{link.title} →</h3>
@@ -27,7 +27,6 @@ type Link = {
   href: string;
   title: string;
   subtitle: string;
-  target?: string;
 };
 
 const links: Link[] = [
@@ -36,19 +35,16 @@ const links: Link[] = [
     title: "🌐 Nosso site",
     subtitle:
       "Que tal se juntar a comunidade PodCodar?",
-    target: "_blank",
   },
   {
     href: "http://wiki.podcodar.com/",
     title: "📚 Estude",
     subtitle:
       "Aprenda mais sobre a comunidade, e estude através de nossas trilhas!",
-    target: "_blank",
   },
   {
     href: "https://github.com/podcodar/exercises/",
     title: "💪🏽 Exercícios",
     subtitle: "Descubra e pratique com projetos de exemplos da comunidade.",
-    target: "_blank",
   },
 ];
