@@ -39,7 +39,7 @@ const links: Link[] = [
     target: "_blank",
   },
   {
-    href: "https://wiki.podcodar.com/",
+    href: "http://wiki.podcodar.com/",
     title: "📚 Estude",
     subtitle:
       "Aprenda mais sobre a comunidade, e estude através de nossas trilhas!",
