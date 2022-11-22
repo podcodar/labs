@@ -2,12 +2,17 @@ import { urls } from "#/settings.ts";
 import { ButtonLink } from "~/components/Button.tsx";
 
 export const NavBar = () => (
-  <div class="flex items-center gap-4 px-4 py-12 mx-auto max-w-screen-md justify-between">
+  <div class="flex items-center gap-4 mx-auto justify-between">
     <a href="/">
       <Logo />
     </a>
 
     <span class="flex gap-2 items-center">
+      <a href={urls.projects} class="hover:underline">projects</a>
+    </span>
+
+    <span class="flex gap-2 items-center">
+
       <ButtonLink
         href={urls.repository}
         target="_blank"

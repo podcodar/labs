@@ -14,10 +14,13 @@ export default function Public({ children }: WithChildren) {
   );
 
   return (
-    <>
+    <div class="mx-auto max-w-screen-lg p-8">
       {headers}
       <NavBar />
-      {children}
-    </>
+
+      <div class="text-center grid gap-8 p-8 my-16">
+        {children}
+      </div>
+    </div>
   );
 }

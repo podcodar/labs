@@ -9,4 +9,5 @@ export const site = {
 export const urls = {
   repository: "https://github.com/podcodar/labs",
   login: "/login",
+  projects: "/projects",
 };
