@@ -1,21 +1,37 @@
-import { site } from "#/settings.ts";
+import { urls } from "#/settings.ts";
+import { ButtonLink } from "~/components/Button.tsx";
 
 export const NavBar = () => (
-  <div class="flex items-center gap-4 px-4 py-12 mx-auto max-w-screen-md">
+  <div class="flex items-center gap-4 px-4 py-12 mx-auto max-w-screen-md justify-between">
     <a href="/">
       <Logo />
     </a>
 
-    <a href={site.repository} target="_blank" class="ml-auto hover:shadow-md">
-      {githubIcon}
-    </a>
+    <span class="flex gap-2 items-center">
+      <ButtonLink
+        href={urls.repository}
+        target="_blank"
+        class="text-gray-900 p-2 border-none hover:bg-gray-200"
+      >
+        {githubIcon}
+      </ButtonLink>
+
+      <ButtonLink
+        href={urls.login}
+        class="text-gray-900 border-gray-900 hover:bg-gray-200"
+      >
+        Login
+      </ButtonLink>
+    </span>
   </div>
 );
 
 const Logo = () => (
-  <span class="flex items-center">
+  <span class="flex gap-2 items-center hover:underline">
     {logo}
-    PodCodar.<span class="font-bold">labs</span>
+    <span>
+      PodCodar.<span class="font-bold text-pink-600">labs</span>
+    </span>
   </span>
 );
 
@@ -24,7 +40,7 @@ const logo = (
     width={40}
     height={40}
     src="/logo.svg"
-    alt="the fresh logo: a sliced lemon dripping with juice"
+    alt="Gennevive, PodCodar coding llama"
   />
 );
 

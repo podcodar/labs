@@ -1,24 +1,23 @@
+import Layout from "~/layouts/Public.tsx";
+import { ButtonLink } from "~/components/Button.tsx";
+
 export default function Home() {
   return (
-    <div class="p-4 mx-auto max-w-screen-md text-center">
-      <h1 class="text-xl">
-        👩🏾‍🔬 PodCodar.<span class="font-bold">labs</span>
-      </h1>
+    <Layout>
+      <div class="p-4 mx-auto max-w-screen-md text-center">
+        <h1 class="text-6xl font-bold">
+          PodCodar<span class="text-pink-600">Labs!</span>
+        </h1>
 
-      <div class="flex gap-4 my-4 justify-center">
-        {projectLinks.map((link) => (
-          <a
-            href={link.href}
-            class="
-              text-blue-300 border-1 border-blue-200 py-2 px-8 rounded-full
-              hover:underline hover:bg-blue-50 hover:shadow
-            "
-          >
-            {link.name}
-          </a>
-        ))}
+        <div class="flex gap-4 my-4 justify-center">
+          {projectLinks.map((link) => (
+            <ButtonLink href={link.href}>
+              {link.name}
+            </ButtonLink>
+          ))}
+        </div>
       </div>
-    </div>
+    </Layout>
   );
 }
 
@@ -28,6 +27,5 @@ type Link = {
 };
 
 const projectLinks: Link[] = [
-  { name: "Colinha", href: "/projects/colinha" },
   { name: "Counter", href: "/projects/counter" },
 ];
