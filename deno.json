@@ -1,8 +1,12 @@
 {
   "tasks": {
-    "start": "deno run -A --watch=static/,routes/ dev.ts"
+    "start": "deno run --unstable -A --watch=static/,routes/ dev.ts"
   },
   "compilerOptions": {
+    "lib": [
+      "deno.window",
+      "deno.unstable"
+    ],
     "jsx": "react-jsx",
     "jsxImportSource": "preact"
   },
@@ -10,6 +14,7 @@
   "imports": {
     "#/": "./",
     "~/": "./packages/",
+    "fmt/": "https://deno.land/std@0.184.0/",
     "$fresh/": "https://deno.land/x/fresh@1.2.0/",
     "preact": "https://esm.sh/preact@10.15.1",
     "preact/": "https://esm.sh/preact@10.15.1/",
