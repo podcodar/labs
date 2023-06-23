@@ -3,14 +3,15 @@ import { h } from "preact";
 import { tw } from "twind";
 
 export function ButtonLink(props: h.JSX.HTMLAttributes<HTMLAnchorElement>) {
-  const styles = tw`
+  const styles = tw(`
     text-blue-300 border-1 border-blue-200 py-2 px-8 rounded-full
     hover:underline hover:bg-blue-50 hover:shadow
-  `;
+    ${props.class ?? ''}
+  `);
   return (
     <a
       {...props}
-      class={tw(styles, props.class)}
+      class={styles}
     />
   );
 }
