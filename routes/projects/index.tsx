@@ -26,4 +26,5 @@ type Link = {
 
 const projectLinks: Link[] = [
   { name: "Counter", href: "/projects/counter" },
+  { name: "Mock Interview", href: "/projects/interviews" },
 ];
