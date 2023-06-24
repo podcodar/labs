@@ -131,16 +131,13 @@ export default function Home({ data }: PageProps<Data>) {
 
         <h2 class="text-xl">Upcoming interviews ⌛️</h2>
 
-        <div>
+        <div class="grid grid-cols-2">
           {data.interviews.map((i) => (
             <div class="p-2 rounded grid">
-              <p>ID: {i.id}</p>
-              <p>Name: {i.name}</p>
+              <p>Name: {i.name} <DeleteButton id={i.id} /></p>
               <p>Created at: {i.createdAt.toDateString()}</p>
               <p>Techs: {i.techs.join(",")}</p>
               <p>Status: {i.status}</p>
-
-              <DeleteButton id={i.id} />
             </div>
           ))}
         </div>
